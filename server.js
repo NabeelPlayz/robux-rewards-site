@@ -78,4 +78,10 @@ app.post("/admin/withdraw", (req, res) => {
     res.json({ success: true });
 });
 
+// Define the root route
+app.get("/", (req, res) => {
+    res.send("Welcome to the Robux Rewards Site API!");
+});
+
+// Start the server on port 3000
 app.listen(3000, () => console.log("Server running on port 3000"));
